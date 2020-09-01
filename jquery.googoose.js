@@ -205,6 +205,7 @@
                 thtml.find(options.footerarea).replaceWith('');
                 thtml.find('table#' + options.headerfooterid + ' .f').append( 
                         GG.footerstart() + new_footer + GG.footerend());
+                thtml.find('#'+options.headerfooterid+'').append('randomtext here fixes this')
                 html = thtml[0].outerHTML;
             }
             return html;
